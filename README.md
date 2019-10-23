@@ -6,9 +6,9 @@ The Data Generator(Keras) is encapsulated as a Data Loader similar to the Pytorc
 **`3.Three step to modify`** 
 **`4.Easy to migrate`** 
 
->######RELATED LINKS  
->######① Keras_Template:[]()   
->######② Pytorch_Template:[]()  
+>RELATED LINKS  
+>① Keras_Template:[https://github.com/gtdhm/Keras_Template.git](https://github.com/gtdhm/Keras_Template.git)   
+>② Pytorch_Template:[https://github.com/gtdhm/Pytorch_Template.git](https://github.com/gtdhm/Pytorch_Template.git) 
 
 ## Requirements
 ![Github](https://img.shields.io/badge/python-v3.6-blue.svg?style=for-the-badge&logo=python)
