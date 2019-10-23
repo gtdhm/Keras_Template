@@ -3,12 +3,12 @@ Three step to use a functional template project for your any mission. A deep lea
 The Data Generator(Keras) is encapsulated as a Data Loader similar to the Pytorch, which makes the whole project structure and data flow consistent with the Pytorch project, and makes the codes of the two frameworks more general and easier to migrate with each other.  
 **`1.Strong scalability`**  
 **`2.Clear structure`**  
-**`3.Three step to modify`** 
+**`3.Three step to modify`**  
 **`4.Easy to migrate`** 
 
 >RELATED LINKS  
->① Keras_Template:[https://github.com/gtdhm/Keras_Template.git](https://github.com/gtdhm/Keras_Template.git)   
->② Pytorch_Template:[https://github.com/gtdhm/Pytorch_Template.git](https://github.com/gtdhm/Pytorch_Template.git) 
+>① Keras_Template --> [https://github.com/gtdhm/Keras_Template.git](https://github.com/gtdhm/Keras_Template.git)   
+>② Pytorch_Template --> [https://github.com/gtdhm/Pytorch_Template.git](https://github.com/gtdhm/Pytorch_Template.git) 
 
 ## Requirements
 ![Github](https://img.shields.io/badge/python-v3.6-blue.svg?style=for-the-badge&logo=python)
@@ -62,7 +62,7 @@ keras_template/
 ```
 ## Demo
 The template has prepared all you needs to run, including multi classification dataset and trained checkpoint. So you can feel free to modify the training and testing options in ./scrip/train.sh or test.sh.
-```
+```Bash
 git clone https://github.com/gtdhm/Keras_Template.git
 cd Keras_Template
 # train
@@ -80,20 +80,20 @@ python3 ./script/test.sh
 ## Usage
 This will show you how to modify this template step by step simply. In other words, where you need to adapt to different project tasks and the rest you don't need to modify. 
 - `*KEY: You just need to modify the code between the following:`
-```
+```Python
 # TODO(User) >>> ..... 
   code 
 # TODO(User): End
 ```
  1. **modify the .option/**  
     **`--> base_options.py`**
-    ```
+    ```Python
     # TODO(User) >>> modify the class name of your labels in Order!
         self.class_name = ['zero', 'one', 'two', 'three', 'four', 'five']
     # TODO(User): End
     ```
     **`--> train_options.py and test_options.py`**
-    ```
+    ```Python
     def add_parser(self):
     # TODO(User) >>> add your own train or test parse.
         # parser.add_argument()
@@ -101,7 +101,7 @@ This will show you how to modify this template step by step simply. In other wor
     ```
  2. **modify the .database/**  
     **`--> base_dataset.py`**  
-    ```
+    ```Python
     def _add_to_database(self, index, data_set, path):
     # TODO(User) >>> add your own data encoding
         self.image_ids.append()
@@ -117,7 +117,7 @@ This will show you how to modify this template step by step simply. In other wor
     ```
  3. **modify the .model/**  
     **`--> base_model.py`**  
-    ```
+    ```Python
     class BaseModel(object):
         def __init__(self, cfg):
         # TODO(User): redefine the following >>>
@@ -131,7 +131,7 @@ This will show you how to modify this template step by step simply. In other wor
         # TODO(User): END
     ```
     **`--> base_network.py`**  
-    ```
+    ```Python
     def BaseNetwork(x_input, cfg):
     # TODO(Usr) >>> redefine following layers
         keras.layers.Conv2D()
