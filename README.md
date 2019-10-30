@@ -1,5 +1,5 @@
 # Keras_Template
-Three step to use a functional template project for your any mission. A deep learning project template with simple modification based on Keras.  
+You only need three step to use a functional template project for your any missions. A deep learning project template with simple modification based on Keras.  
 The Data Generator(Keras) is encapsulated as a Data Loader similar to the Pytorch, which makes the whole project structure and data flow consistent with the Pytorch project, and makes the codes of the two frameworks more general and easier to migrate with each other.  
 **`1.Strong scalability`**  
 **`2.Clear structure`**  
@@ -7,8 +7,8 @@ The Data Generator(Keras) is encapsulated as a Data Loader similar to the Pytorc
 **`4.Easy to migrate`** 
 
 >RELATED LINKS  
->① Keras_Template --> [https://github.com/gtdhm/Keras_Template.git](https://github.com/gtdhm/Keras_Template.git)   
->② Pytorch_Template --> [https://github.com/gtdhm/Pytorch_Template.git](https://github.com/gtdhm/Pytorch_Template.git) 
+>① Keras_Template --> [https://github.com/gtdhm/Keras_Template](https://github.com/gtdhm/Keras_Template)   
+>② Pytorch_Template --> [https://github.com/gtdhm/Pytorch_Template](https://github.com/gtdhm/Pytorch_Template) 
 
 ## Requirements
 ![Github](https://img.shields.io/badge/python-v3.6-blue.svg?style=for-the-badge&logo=python)
@@ -71,12 +71,12 @@ python3 ./script/train.sh
 python3 ./script/test.sh
 ```
 >*Run results on the command line：
-![Image](./work_dir/1.jpg)
-![Image](./work_dir/2.jpg)
-![Image](./work_dir/3.jpg)
-![Image](./work_dir/4.jpg)
-![Image](./work_dir/5.jpg)
-![Image](./work_dir/6.jpg)
+![Image01](./work_dir/1.jpg)
+![Image02](./work_dir/2.jpg)
+![Image03](./work_dir/3.jpg)
+![Image04](./work_dir/4.jpg)
+![Image05](./work_dir/5.jpg)
+![Image06](./work_dir/6.jpg)
 ## Usage
 This will show you how to modify this template step by step simply. In other words, where you need to adapt to different project tasks and the rest you don't need to modify. 
 - `*KEY: You just need to modify the code between the following:`
