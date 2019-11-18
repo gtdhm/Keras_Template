@@ -56,6 +56,10 @@ class BaseOptions(object):
         # Network base options
         parser.add_argument('--input_size', type=tuple, default=(224, 224, 3),
                             help='the input image dim (w * h * c)')
+        parser.add_argument('--mean', type=tuple, default=(0.485, 0.456, 0.406),
+                            help='the normalize mean')
+        parser.add_argument('--std', type=tuple, default=(0.229, 0.224, 0.225),
+                            help='the normalize std')
         parser.add_argument('--batch', type=int, default=32,
                             help='set a batch size inputs')
         parser.add_argument('--gpu_ids', type=str, default='0',
@@ -68,6 +72,8 @@ class BaseOptions(object):
                             help="learning rate")
         parser.add_argument('--lr_scheduler', type=str, default='step',
                             help="a learning rate scheduler >>> [power | exp | step]")
+        parser.add_argument('--lr_gamma', type=float, default=0.1,
+                            help="the learning rate decay parameter: gamma")
         parser.add_argument('--lr_power', type=int, default=32,
                             help="power decay scheduler")
         parser.add_argument('--lr_step', type=str, default="16,22",
@@ -78,6 +84,10 @@ class BaseOptions(object):
                             help='random flip the images for data augmentation >>> [horizontal | vertical]')
         parser.add_argument('--rotate', type=str, default=None,
                             help='random rotate the images for data augmentation >>> [0,360]')
+        parser.add_argument('--translate', type=str, default=None,
+                            help=">>> random image translation coefficient for data augmentation:[0.9,1.2]")
+        parser.add_argument('--color_scale', type=str, default=None,
+                            help=">>> random to scale image color channel for data augmentation:[0.6,1.4]")
 
         # Display relevant options
         parser.add_argument('--display_path', type=bool, default=True,
