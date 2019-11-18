@@ -21,7 +21,7 @@ def load_database(cfg):
         test_loader: a test object of DataLoader
     """
     if cfg.mode == 'Train':
-        train_db = BaseDataset(cfg)
+        train_db = BaseDataset(cfg, use_trans=True)
         train_db.load_data(mode='Train', shuffle=True)
         train_loader = DataLoader(database=train_db, cfg=cfg)
 
